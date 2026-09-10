@@ -1,0 +1,14 @@
+import qrcode
+
+url=input("Enter URL").strip()
+file_path="C:\Users\rexso\Desktop\qrcode.png"
+
+#Generate a python object:Access the library of the qr code and call the QR code constructor
+qr= qrcode.QRCode()
+qr.add_data(url)
+
+#Assigning an image object:Save image to file path
+img= qr.make_image()
+img.save(file_path)
+
+print("QR code was succesfully generated!")
