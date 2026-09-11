@@ -1,6 +1,7 @@
 import qrcode
 
 url=input("Enter URL").strip()
+#Replace file path with user's desired project path.
 file_path="C:\Users\rexso\Desktop\qrcode.png"
 
 #Generate a python object:Access the library of the qr code and call the QR code constructor
